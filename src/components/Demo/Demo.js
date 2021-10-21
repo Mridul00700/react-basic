@@ -1,8 +1,11 @@
+import React from "react";
+import Paragraph from "./Paragraph";
 
 function Demo(props) {
+    console.log("this is demo");
     return (
-        <p>{props.show ? 'This is new!' : ''}</p>
+        <Paragraph>{props.show ? 'This is new!' : ''}</Paragraph>
     )
 }
 
-export default Demo;
+export default React.memo(Demo);
